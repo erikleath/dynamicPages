@@ -43,6 +43,11 @@ class SiteController extends Controller
 	}
 	
 	public function actionView($domain,$page = null){
+		//Frank, I think we need to add a parm value to the actionView
+		//it would probably look something like:
+		//actionView($domain, $page = null, $parm = null)
+		//making the url something like:
+		//livinglean/how-it-works/shw
 		$this->domain = $domain;
 		$this->layout='//layouts/'.$domain.'/column1';
 		//var_dump($this->layout);exit;

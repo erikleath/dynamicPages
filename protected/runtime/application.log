@@ -2451,3 +2451,87 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/dynamicPages/biz/how-it-works
 ---
+2013/01/17 12:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:63
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic
+---
+2013/01/17 12:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:63
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic
+---
+2013/01/17 12:44:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/
+---
+2013/01/17 12:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:63
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic
+---
+2013/01/17 12:45:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/
+---
+2013/01/17 12:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic
+---
