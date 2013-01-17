@@ -85,9 +85,11 @@ class Domain extends CActiveRecord
 		));
 	}
 	
-	public function getPage(){
+	public function retrievePage($request){
 		foreach($this->pages as $page){
-			return $page;
+			if ($page->page_name == $request) {
+                return $page;
+            }
 		}
 		return NULL;
 	}

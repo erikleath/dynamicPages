@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+	public $domain;
 	/**
 	 * Declares class-based actions.
 	 */
@@ -41,13 +42,21 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 	
-	public function actionView($page){
-		$domainName = $this->requestUrl();
-		$model = Pages::model()->findByAttributes(array('page_name'=>$page));
-		if($model===NULL){
+	public function actionView($domain,$page = null){
+		$this->domain = $domain;
+		$this->layout='//layouts/'.$domain.'/column1';
+		//var_dump($this->layout);exit;
+		$domainName = Domain::model()->findByAttributes(array('domain_name'=>$domain));
+		$pageName = $domainName->retrievePage($page);
+		if($domainName===NULL){
 			throw new CHttpException(404,'The requested page does not exist.');
 		}
-		$this->render('view', array('model'=>$model, 'domainName'=>$domainName));
+		
+		//echo "<pre>";var_dump($domain,$page,$domainName); exit;		
+		if($pageName===NULL){
+			throw new CHttpException(404,'The requested page does not exist.');
+		}		
+		$this->render('view', array('domainName'=>$domainName, 'pageName'=>$pageName, 'domain'=>$domain));
 	}
 
 	/**

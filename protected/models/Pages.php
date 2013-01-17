@@ -52,7 +52,7 @@ class Pages extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'content'=>array(self::HAS_MANY, 'Content', 'pages_id'),
-			'domain'=>array(self::HAS_MANY, 'Domain', 'id'),
+			'domain'=>array(self::HAS_ONE, 'Domain', 'id'),
 		);
 	}
 
@@ -90,14 +90,6 @@ class Pages extends CActiveRecord
 		//var_dump($this->content);exit;
 		foreach($this->content as $content){
 			return $content->content;
-		}
-		return NULL;
-	}
-	
-	public function getDomain(){
-		foreach($this->domain as $domain){
-			//var_dump($domain->domain_name);exit;
-			return $domain;
 		}
 		return NULL;
 	}
