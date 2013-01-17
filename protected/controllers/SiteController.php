@@ -22,7 +22,7 @@ class SiteController extends Controller
 	}
 	
 	public function requestUrl(){
-		if(Yii::app()->request->baseUrl == '/dynamic'){
+		if(Yii::app()->request->baseUrl == '/dynamicPages'){
 			$newUrl = '/dynamic';
 			Yii::app()->request->baseUrl = $newUrl;
 			return Yii::app()->request->baseUrl;
