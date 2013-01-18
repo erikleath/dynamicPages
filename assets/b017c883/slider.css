@@ -1,0 +1,15 @@
+.infoSlider{
+	/* background: none repeat scroll 0 0 #000000; */
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	position: absolute;
+	top: 140px;
+	left: 90px;
+	width: 200px !important;
+	height: 200px;
+	z-index: 1000;
+	margin-left:1px;
+/* 	opacity:0.5;  */
+/* 	filter:alpha(opacity:50); */

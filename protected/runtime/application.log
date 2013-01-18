@@ -2535,3 +2535,967 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/dynamicPages/dynamic
 ---
+2013/01/18 08:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:65
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', NULL, NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic
+---
+2013/01/18 08:19:57 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "dynamic".' in /media/sf_sandbox/yii/framework/web/CController.php:879
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(783): CController->renderPartial('dynamic', NULL, true)
+#1 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(60): CController->render('dynamic')
+#2 [internal function]: SiteController->actionView('dynamic', NULL, NULL)
+#3 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#10 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/dynamicPages/dynamic
+---
+2013/01/18 08:20:26 [error] [php] Undefined variable: pageName (/media/sf_sandbox/dynamicPages/protected/views/site/view.php:2)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(60): SiteController->render()
+#3 unknown(0): SiteController->actionView()
+#4 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#8 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#9 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#10 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic
+in /media/sf_sandbox/dynamicPages/protected/views/site/view.php (2)
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (60)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 08:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/dynamic/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/dynamic...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/dynamic/dynamic/index
+---
+2013/01/18 08:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/biz/biz/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/biz/biz/ind...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/biz/biz/index
+---
+2013/01/18 08:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/biz/biz/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/biz/biz/ind...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/biz/biz/index
+---
+2013/01/18 08:35:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/dynamic/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/dynamic...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/dynamic/dynamic/index
+---
+2013/01/18 09:11:51 [error] [php] Trying to get property of non-object (/media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:69)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#5 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (69)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 09:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:66
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', 'how-it-works', 'dsaadfa')
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/dsaadfa
+---
+2013/01/18 09:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:66
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', 'how-it-works', 'test')
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/test
+---
+2013/01/18 09:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/dynamic/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/dynamic...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/dynamic/dynamic/index
+---
+2013/01/18 09:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/how-it-works/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/how-it-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/dynamic/index
+---
+2013/01/18 09:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/how-it-works/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/how-it-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/dynamic/index
+---
+2013/01/18 09:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/how-it-works/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/how-it-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/dynamic/index
+---
+2013/01/18 09:43:39 [error] [php] Trying to get property of non-object (/media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:54)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#5 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/6
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (54)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 09:44:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:68
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamic', 'how-it-works', '6')
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/6
+---
+2013/01/18 09:44:08 [error] [php] Trying to get property of non-object (/media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:54)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#5 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/6
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (54)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 09:51:35 [error] [php] Object of class Pages could not be converted to string (/media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:68)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#5 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (68)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 09:55:25 [error] [php] Array to string conversion (/media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:67)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#5 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (67)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 10:07:46 [error] [php] Undefined variable: parmValue (/media/sf_sandbox/dynamicPages/protected/views/site/view.php:3)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(73): SiteController->render()
+#3 unknown(0): SiteController->actionView()
+#4 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#8 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#9 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#10 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/views/site/view.php (3)
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (73)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 10:25:31 [error] [php] Undefined variable: form (/media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:74)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#5 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (74)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 10:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:55
+Stack trace:
+#0 [internal function]: SiteController->actionView('gii', NULL, NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/gii
+---
+2013/01/18 10:37:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/how-it-works/shw".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/how-it-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+---
+2013/01/18 10:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:55
+Stack trace:
+#0 [internal function]: SiteController->actionView('gii', 'default', 'login')
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/gii/default/login
+---
+2013/01/18 11:09:17 [error] [php] Undefined variable: model (/media/sf_sandbox/dynamicPages/protected/views/site/_form.php:10)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /media/sf_sandbox/dynamicPages/protected/views/site/view.php(13): SiteController->renderPartial()
+#2 /media/sf_sandbox/yii/framework/web/CBaseController.php(127): require()
+#3 /media/sf_sandbox/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#4 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#5 /media/sf_sandbox/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#6 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(80): SiteController->render()
+#7 unknown(0): SiteController->actionView()
+#8 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#12 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#13 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#14 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/views/site/_form.php (10)
+in /media/sf_sandbox/dynamicPages/protected/views/site/view.php (13)
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (80)
+2013/01/18 11:11:25 [error] [php] include(User.php): failed to open stream: No such file or directory (/media/sf_sandbox/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(48): spl_autoload_call()
+#1 unknown(0): SiteController->actionView()
+#2 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (48)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 11:11:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dynamic.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (48)
+in /media/sf_sandbox/dynamicPages/index.php (13)
+2013/01/18 11:11:38 [error] [exception.CDbException] exception 'CDbException' with message 'The table "users" for active record class "Users" cannot be found in the database.' in /media/sf_sandbox/yii/framework/db/ar/CActiveRecord.php:2312
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Users))
+#1 /media/sf_sandbox/yii/framework/db/ar/CActiveRecord.php(403): CActiveRecord::model('Users')
+#2 /media/sf_sandbox/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(48): CActiveRecord->__construct()
+#4 [internal function]: SiteController->actionView('dynamic', 'how-it-works', 'shw')
+#5 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#6 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#7 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#11 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#12 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+---
+2013/01/18 11:12:53 [error] [php] Undefined variable: model (/media/sf_sandbox/dynamicPages/protected/views/site/_form.php:10)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /media/sf_sandbox/dynamicPages/protected/views/site/view.php(13): SiteController->renderPartial()
+#2 /media/sf_sandbox/yii/framework/web/CBaseController.php(127): require()
+#3 /media/sf_sandbox/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#4 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#5 /media/sf_sandbox/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#6 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(81): SiteController->render()
+#7 unknown(0): SiteController->actionView()
+#8 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#12 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#13 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#14 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/dynamic/how-it-works/shw
+in /media/sf_sandbox/dynamicPages/protected/views/site/_form.php (10)
+in /media/sf_sandbox/dynamicPages/protected/views/site/view.php (13)
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (81)
+2013/01/18 11:13:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/dynamic/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/dynamic...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/dynamic/dynamic/index
+---
+2013/01/18 11:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dynamic/dynamic/dynamic/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('dynamic/dynamic...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/dynamic/dynamic/dynamic/index
+---
+2013/01/18 11:23:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('dynamix', 'index', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/dynamix/index
+---
+2013/01/18 11:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/get-your-body.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/livingsmart.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/livinglean.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/livingeasy.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/livingfree.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/lou-ryan_sm.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livinglean.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livinglean.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livingfree.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livingfree.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livingeasy.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livingeasy.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livingsmart.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livingsmart.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/lou-ryan_sm.jpg".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/lou-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/lou-ryan_sm.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/get-your-body.jpg".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/get-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/get-your-body.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livinglean.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livinglean.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livingfree.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livingfree.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livingeasy.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livingeasy.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/lou-ryan_sm.jpg".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/lou-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/lou-ryan_sm.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/livingsmart.png".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/livi...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/livingsmart.png
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/get-your-body.jpg".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/get-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/get-your-body.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/get-your-body.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/<".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/<')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/%3C?php%20echo%20Yii::app()-%3Erequest-%3EbaseUrl;%20?%3E/images/lou-ryan_sm.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/get-your-body.jpg".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/get-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/get-your-body.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/lou-ryan_sm.jpg".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/lou-...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/lou-ryan_sm.jpg
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 11:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/backtotop.js".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('js/backtotop.js')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/js/backtotop.js
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 12:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('site', 'terms', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/site/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 12:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 12:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('site', 'policy', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/site/policy
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 12:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/biz/biz/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/biz/biz/ind...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/biz/biz/index
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/index
+---
+2013/01/18 12:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/biz/biz/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/biz/biz/ind...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/biz/biz/index
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livinglean
+---
+2013/01/18 12:18:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('site', 'biz', 'livinglean')
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/site/biz/livinglean
+---
+2013/01/18 12:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('site', 'biz', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/site/biz
+---
+2013/01/18 12:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('site', 'index', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/site/index
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livinglean
+---
+2013/01/18 12:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('site', 'terms', NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/site/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:23:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php:57
+Stack trace:
+#0 [internal function]: SiteController->actionView('terms', NULL, NULL)
+#1 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#7 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#8 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dynamicPages/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:23:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:24:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/biz/biz/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/biz/biz/ind...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/biz/biz/index
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:24:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:25:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/biz/biz/index".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/biz/biz/ind...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/biz/biz/index
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/_terms".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/_terms')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/_terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:28:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/site/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:29:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/site/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/livingsmart".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/livingsmart')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/livingsmart
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingeasy
+---
+2013/01/18 12:30:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/site/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:30:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/site/terms
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:30:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biz/images/guarantee100.gif".' in /media/sf_sandbox/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('biz/images/guar...')
+#1 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dynamicPages/biz/images/guarantee100.gif
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:32:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /media/sf_sandbox/yii/framework/web/CController.php:337
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /media/sf_sandbox/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /media/sf_sandbox/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/view')
+#5 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /media/sf_sandbox/dynamicPages/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/dynamicPages/site/policy
+HTTP_REFERER=http://sandbox.dev:8080/dynamicPages/biz/livingsmart
+---
+2013/01/18 12:36:17 [error] [php] Undefined variable: pageNmae (/media/sf_sandbox/dynamicPages/protected/views/site/view.php:19)
+Stack trace:
+#0 /media/sf_sandbox/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /media/sf_sandbox/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php(82): SiteController->render()
+#3 unknown(0): SiteController->actionView()
+#4 /media/sf_sandbox/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /media/sf_sandbox/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /media/sf_sandbox/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /media/sf_sandbox/yii/framework/web/CController.php(287): SiteController->runAction()
+#8 /media/sf_sandbox/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#9 /media/sf_sandbox/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#10 /media/sf_sandbox/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /media/sf_sandbox/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /media/sf_sandbox/dynamicPages/index.php(13): CWebApplication->run()
+REQUEST_URI=/dynamicPages/biz/join-livinglean
+in /media/sf_sandbox/dynamicPages/protected/views/site/view.php (19)
+in /media/sf_sandbox/dynamicPages/protected/controllers/SiteController.php (82)
+in /media/sf_sandbox/dynamicPages/index.php (13)

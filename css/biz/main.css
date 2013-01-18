@@ -1,0 +1,59 @@
+
+/* 
+    Document   : biz
+    Created on : Jan 8, 2013, 12:15:32 PM
+    Author     : robbie
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.clear{clear:both;}
+.center{margin-right:auto;margin-left:auto;}
+h2{font-size:18px;font-weight:normal;}
+h3{font-size:1.4em;line-height:1.5em;font-weight:normal;margin: 0;}
+#container{position: relative;margin-right: auto;margin-left: auto;width: 970px;}
+#body{border-bottom:solid 1px #000;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#444;font-size:13px;line-height:1.6em;}
+#header{padding:25px 0px; height:75px;}
+#header-container{}
+#header-left{float:left;}
+#header-right{float:right;}
+#footer-container{height:50px;}
+#footer{width: 950px;margin: 0px auto;height:50px;text-align:center;padding:5px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:11pt;}
+#footer-links {float:left;font-size:8pt;font-weight:bold;}
+#footer-links a, #footer-links a:visited, #footer-btn a,  #footer-btn a:visited {text-decoration: none;color: #9D1C20;}
+#footer-copy{color: #888;padding: 0;margin: 0;font-size: 13px;line-height: 15px;display: block;}
+#footer-btn{float:right;}
+#mainmenu{height:28px; z-index: 1; position: relative;font-family:Arial,Helvetica,sans-serif; font-size:13px;}
+#mainmenu ul{margin:0;padding:10px 0 0 10px; float:right;}
+#mainmenu ul .last{background-color: #00A348;}
+#mainmenu ul li{border-radius: 7px 7px 0 0; background-color: #9D1C20; margin: 0px; padding: 12px 0px;}
+#mainmenu ul li a{color:#fff;background-color:transparent;font-size:18px;font-weight:700;text-decoration:none;padding:12px 18px;font-size:13px;}
+#mainmenu ul li a:hover,#mainmenu ul li.active a{color:#fff;background-color:#0A4D91;text-decoration:none; border-radius: 7px 7px 0 0;}
+#mainmenu ul li,div.form .rememberMe label{display:inline;}
+#body-top{margin: 10px auto;border-radius: 50px 0px 50px 0px;border-style: solid; border-width:2px;border-color: #9d1c20;box-shadow: 10px 10px 10px -5px #9d1c20;width:970px;position: relative; z-index: 2; background-color: #fff;padding: 20px;}
+#body-left{width: 430px;float:left;}
+#body-right{width: 430px;float:right;padding-right:51px;}
+#body-bottom{padding: 10px;margin: 25px 0; width:960px}
+#join{margin:25px 30px; float:left;width:940px;}
+#bottom-left{float:left; width:670px; padding-left: 10px;}
+#bottom-middle{float:left; width: 270px;padding: 20px 0px 0px 0px;}
+#bottom-middle p.dropcap2:first-letter{font-size: 30px;margin: 0 10px 10px 0;line-height: 30px;float: left;display: inline-block;border-radius: 30px;padding: 5px 10px;background: #555;color: #fff;}
+#bottom-middle p.dropcap4:first-letter{font-size: 30px;margin: 0 10px 10px 0;line-height: 30px;float: left;display: inline-block;border-radius: 30px;padding: 5px 10px;background: #ddd;color: #555;}
+#bottom-middle p.dropcap6:first-letter{font-size: 30px;margin: 0 10px 10px 0;line-height: 30px;float: left;display: inline-block;border-radius: 30px;padding: 5px 10px;background: #9D1C20;color: #fff;}
+#bottom-right{float:left; width:225px;padding: 20px 22px;}
+#bottom-a,#bottom-b{width:350px;float:left;padding-right:10px}
+#bottom-c{width:200px;float:left;}
+#content{margin:25px 30px; float:left;width:683px;}
+#content-images{float:right;padding:10px 20px 10px 0px; width:205px;}
+.form{float: right;background-color: #e0e0e0;margin: 10px;border-radius: 30px 0px 30px 0px;padding: 20px;text-align:right;width:300px;}
+.row{padding-bottom:10px;}
+.form p.note{float:left; font-size:11pt;margin-top:0px;background: #9D1C20;color: #fff;
+display: inline-block;
+padding: 2px 7px;
+font-size: 1.2em;}
+img.center{margin-right:auto;margin-left:auto;}
+img.floatLeft{float:left; margin-right:10px;}
+img.floatRight{float:right; margin: 5px 0;}

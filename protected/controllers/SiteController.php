@@ -22,13 +22,15 @@ class SiteController extends Controller
 		);
 	}
 	
-	public function requestUrl(){
+	/*
+public function requestUrl(){
 		if(Yii::app()->request->baseUrl == '/dynamicPages'){
 			$newUrl = '/dynamic';
 			Yii::app()->request->baseUrl = $newUrl;
 			return Yii::app()->request->baseUrl;
 		}
 	}
+*/
 
 
 	/**
@@ -43,17 +45,14 @@ class SiteController extends Controller
 	}
 	
 	public function actionView($domain,$page = null, $parm = null){
-		//Frank, I think we need to add a parm value to the actionView
-		//it would probably look something like:
-		//actionView($domain, $page = null, $parm = null)
-		//making the url something like:
-		//livinglean/how-it-works/shw
-            
+		$model = new Users;
 		$this->domain = $domain; //Why save this like this, since you are already passing it to the view? (FJW)
-		$this->layout='//layouts/'.$domain.'/column1';
+		$this->layout='//layouts/'.$domain.'/main';
+		//var_dump($this->layout);exit;
                 
 		//var_dump($this->layout);exit;
 		$domainName = Domain::model()->findByAttributes(array('domain_name'=>$domain));
+		$parmName = Pages::model()->findByAttributes(array('parm'=>$parm));
 		if($domainName===NULL){
 			throw new CHttpException(404,'The requested page does not exist.');
 		}
@@ -62,10 +61,25 @@ class SiteController extends Controller
                 
 		//echo "<pre>";var_dump($domain,$page,$domainName); exit;		
 		if($pageName===NULL){
+			Yii::app()->request->redirect($domain.'/index');
+		}
+		
+		if($parmName->parm != null){
+			$this->layout='//layouts/'.$domain.'/'.$parm.'/column1';
+		}
+		
+		//$parmValue = Pages::model()->findByAttributes(array('parm'=>$parm));
+		if($parmName===NULL){
 			throw new CHttpException(404,'The requested page does not exist.');
 		}
-
-		$this->render('view', array('domainName'=>$domainName, 'pageName'=>$pageName, 'domain'=>$domain, 'parm'=>$parm));
+		
+		$form = $parmName;
+		
+		if($form == 'yes'){
+			//form handeling functionality goes here!
+		}
+				
+		$this->render('view', array('domainName'=>$domainName, 'pageName'=>$pageName, 'domain'=>$domain, 'parmName'=>$parmName, 'form'=>$form, 'model'=>$model));
 	}
 
 	/**
