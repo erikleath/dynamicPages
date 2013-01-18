@@ -44,7 +44,8 @@ return array(
 			'rules'=>array(
 				//'site/<page:[a-zA-Z0-9-]+>'=>'site/view',
 				'<domain:\w+>'=>'site/view',
-                '<domain:\w+>/<page:[a-zA-Z0-9-]+>'=>'site/view',
+                                '<domain:\w+>/<page:[a-zA-Z0-9-]+>/<parm:[a-zA-Z0-9-]+>' => 'site/view',
+                                '<domain:\w+>/<page:[a-zA-Z0-9-]+>'=>'site/view',
 				'<page:[a-zA-Z0-9-]+>'=>'site/view',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

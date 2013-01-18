@@ -42,26 +42,30 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 	
-	public function actionView($domain,$page = null){
+	public function actionView($domain,$page = null, $parm = null){
 		//Frank, I think we need to add a parm value to the actionView
 		//it would probably look something like:
 		//actionView($domain, $page = null, $parm = null)
 		//making the url something like:
 		//livinglean/how-it-works/shw
-		$this->domain = $domain;
+            
+		$this->domain = $domain; //Why save this like this, since you are already passing it to the view? (FJW)
 		$this->layout='//layouts/'.$domain.'/column1';
+                
 		//var_dump($this->layout);exit;
 		$domainName = Domain::model()->findByAttributes(array('domain_name'=>$domain));
-		$pageName = $domainName->retrievePage($page);
 		if($domainName===NULL){
 			throw new CHttpException(404,'The requested page does not exist.');
 		}
-		
+                
+		$pageName = $domainName->retrievePage($page); //Moved this here to make sure $domainName is not null
+                
 		//echo "<pre>";var_dump($domain,$page,$domainName); exit;		
 		if($pageName===NULL){
 			throw new CHttpException(404,'The requested page does not exist.');
-		}		
-		$this->render('view', array('domainName'=>$domainName, 'pageName'=>$pageName, 'domain'=>$domain));
+		}
+
+		$this->render('view', array('domainName'=>$domainName, 'pageName'=>$pageName, 'domain'=>$domain, 'parm'=>$parm));
 	}
 
 	/**
