@@ -2,12 +2,21 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'users-biz-form',
-	'enableAjaxValidation'=>false,
-)); ?>
+    'enableClientValidation'=>true,
+	'clientOptions'=>array(
+		'validateOnSubmit'=>true,
+))); 
 
-	<p class="note">Complete Your LivingLean Signup!</p>
+/*
+Hey Erik,
+Wasn't quite too sure how you used the $pageName in the SiteController
+So if you can implement that to the form, we could just use that to display the 
+"Complete your ______ Signup!" part of the form and maybe in the DB as well. 
+As of right now, the DB is hardcoded to point to certain images (which is fine). 
+*/
+?>
+        <p class="note">Complete Your <?php $page ?> Signup!</p>
         <div class="clear"></div>
-	<?php echo $form->errorSummary($model); ?>
         <div class="row">
                 <?php echo $form->labelEx($model,'billfname'); ?>
 		<?php echo $form->textField($model,'billfname'); ?>
@@ -75,9 +84,10 @@
 
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<?php echo CHtml::submitButton('Click to get Started', array('class'=>'Finish')); ?>
 	</div>
 	Please click the button only once to prevent submitting your order twice! Thank You!
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+<div class="clear"></div>

@@ -3,15 +3,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
+	[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
 	<?php $domain = $this->domain;
 	?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/<?php echo $domain; ?>/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+<!--	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />-->
 <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 <?php $jsUrl = Yii::app()->request->baseUrl.'/js/'; ?>
 <?php Yii::app()->clientScript->registerScriptFile($jsUrl.'backtotop.js', CClientScript::POS_HEAD); ?>
@@ -20,14 +20,14 @@
 
   <html>
      <body>
-       <a id="top"></a>
-       <div id="container">
-        <div id="header-container">
+       <a id="top"></a>        <div id="header-container">
             <div id="header">
                 <div id="header-left"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/selfhelpworks.png" ></img></div>
                 <div id="header-right"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/trusted-by.jpg" ></img></div>
             </div>
         </div>
+       <div id="container">
+
            <div id="mainmenu">
         
 		<?php $this->widget('zii.widgets.CMenu',array(
@@ -38,7 +38,7 @@
                                 array('label'=>'LivingFree', 'url'=>array('biz/livingfree')),
                                 array('label'=>'LivingEasy', 'url'=>array('biz/livingeasy')),
                                 array('label'=>'LivingSmart', 'url'=>array('biz/livingsmart')),
-                                array('label'=>'JOIN NOW!', 'url'=>array('biz/joinNow'), 'itemOptions'=>array('class'=>'last')),
+                                array('label'=>'JOIN NOW!', 'url'=>array('biz/join-now'), 'itemOptions'=>array('class'=>'last')),
 			),
 		)); ?>
 		
@@ -62,7 +62,7 @@
             	?>
             	
             	
-                <div id="footer-links"><a href='<?php echo Yii::app()->request->baseUrl; ?>/site/terms' class='colorbox' rel="footer">Terms & Conditions</a> | <a href='<?php echo Yii::app()->request->baseUrl; ?>/site/policy' class='colorbox' rel="footer">Privacy Policy by TRUSTe</a> | <a href='<?php echo Yii::app()->request->baseUrl; ?>/site/support' class='colorbox' rel="footer">Customer Support</a> | <a href='images/guarantee100.gif' class="colorbox" rel="footer">100% Guarantee</a></div>
+                <div id="footer-links"><a href='<?php echo Yii::app()->request->baseUrl; ?>/biz/terms' class='colorbox' rel="footer">Terms & Conditions</a> | <a href='<?php echo Yii::app()->request->baseUrl; ?>/biz/policy' class='colorbox' rel="footer">Privacy Policy by TRUSTe</a> | <a href='<?php echo Yii::app()->request->baseUrl; ?>/biz/support' class='colorbox' rel="footer">Customer Support</a> | <a href='../images/guarantee100.gif' class="colorbox" rel="footer">100% Guarantee</a></div>
                 <div id="footer-btn"><a href="#top">Back to Top</a></div>
                 <div id="footer-copy">Copyright 2012 SelfHelpWorks</div>
             </div>
